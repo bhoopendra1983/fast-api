@@ -1,0 +1,29 @@
+uvicorn main:app --reload
+
+fastapi
+uvicorn
+pydantic
+pymongo
+passlib[bcrypt]
+python-jose
+
+
+POST /auth/register
+{
+  "name": "Avika",
+  "email": "avika@example.com",
+  "password": "12345"
+}
+
+
+POST /auth/login
+{
+  "email": "avika@example.com",
+  "password": "12345"
+}
+
+1.pip install fastapi
+2.pip install "uvicorn[standard]"
+3.pip install pydantic
+4.pip install passlib[bcrypt]
+5.pip install python-jose
